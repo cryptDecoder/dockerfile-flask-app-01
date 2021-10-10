@@ -61,10 +61,10 @@ app = Flask(__name__)
 from app import app
 
 
+# create basic route
 @app.route("/")
 def index():
-    return "Welcome to Flask App!!!"
-
+    return "<h1 style=color:red>Welcome to Python Flask Dockerfile Demo </h1>"
 ```
 
 ---
@@ -98,7 +98,7 @@ def index():
   ```bash
   docker run -d -p 5000:5000 flask-app
   ```
-once docker image run in detach mode we just need hit the http"//server-ip:5000 <br>
+once docker image run in detach mode we just need hit the http:"<server-ip>:5000 <br>
 ![snapshot](img.png)
 ---
 For complete source code please clone the repository: <br>
