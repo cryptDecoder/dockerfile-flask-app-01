@@ -1,3 +1,7 @@
+""" 
+initialize the flask app and views
+"""
+
 from flask import Flask
 
 app = Flask(__name__)
